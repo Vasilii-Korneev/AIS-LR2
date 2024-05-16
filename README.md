@@ -18,6 +18,26 @@
    The server is a daemon that receives and saves a file, ending with a SIGTERM and SIGHUP signal. An additional stream from a limited pool is allocated for each connection.
 
    The maximum number of streams, port, maximum file size, as well as the path for saving files are specified in the application startup arguments or configuration file.
+
+## Требования к системе
+ ### В операционной системе должны бытб установлены:
+   1) Распределённая система контроля версий GIT
+
+      Для установки на Linux (на Debian/Ubuntu/Mint) откройте терминал и введите:
+      ###### sudo apt update
+      ###### sudo apt install git
+      или (на Fedora/RHEL/CentOS)
+      ###### sudo apt update
+      ###### sudo dnf install git-all
+
+   3) компилятор языка C++ "G++"
+
+      Для установки на Linux (на Debian/Ubuntu/Mint) откройте терминал и введите:
+      ###### sudo apt update
+      ###### sudo apt install g++
+      или (на Fedora/RHEL/CentOS)
+      ###### sudo apt update
+      ###### sudo dnf install gcc-c++
    
 ## Инструкция по запуску на Linux (Ubuntu):
 1) Открыть терминал (Ctrl+Alt+T)
@@ -39,7 +59,24 @@
 8) При вводе пути конфигурационного файла использовать
    ###### /home/wm/Документы/AIS-LR2/client.cfg
 ## Instructions for running on Linux (Ubuntu):
-   We are already working on it...
+1) Open the terminal (Ctrl+Alt+T)
+2) Enter the following commands:
+   ###### cd ~/Documents
+   ###### git clone https://github.com/Vasilii-Korneev/AIS-LR2.git
+   ###### cd ~/Documents/AIS-LR2
+   ###### g++ -o server server.cpp
+   ###### ./server
+3) Follow the instructions in the terminal
+4) When entering the path of the configuration file, use
+   ###### /home/wm/Documents/AIS-LR2/server.cfg
+5) Open a new terminal (Ctrl+Alt+T)
+6) Enter the following commands:
+   ###### cd ~/Documents/AIS-LR2
+   ###### g++ -o client client.cpp
+   ###### ./client
+7) Follow the instructions in the terminal
+8) When entering the path of the configuration file, use
+   ###### /home/wm/Documents/AIS-LR2/client.cfg
    
 ## Инструкция по запуску на Windows 10/11
    Мы уже работаем над этим...
