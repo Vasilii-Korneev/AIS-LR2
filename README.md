@@ -20,29 +20,24 @@
    The maximum number of streams, port, maximum file size, as well as the path for saving files are specified in the application startup arguments or configuration file.
    
 ## Инструкция по запуску на Linux (Ubuntu):
-### Вариант 1
-1) Скачать [исполняемый файл сервера](https://github.com/Vasilii-Korneev/AIS-LR2/blob/main/server)
-2) Скачать [исполняемый файл клиента](https://github.com/Vasilii-Korneev/AIS-LR2/blob/main/client)
-3) Скачать [исполняемый текстовый файл](https://github.com/Vasilii-Korneev/AIS-LR2/blob/main/file.txt), либо создать его самостоятельно в каталоге с исполняемыми файлами и назвать "file.txt"
-4) Открыть терминал (Ctrl+Alt+T)
-5) Ввести следующие команды:
-   ###### sudo chmod +x ~/Загрузки/server
-   ###### sudo ./Загрузки/server 8000 50 1024 'путь к каталогу сохранения файла'
-   ###### sudo chmod +x ~/Загрузки/client
-   ###### sudo ./Загрузки/server 127.0.0.1 8000 'путь к отправляемому файлу'
-7) Следовать указаниям в терминале
-### Вариант 2
 1) Открыть терминал (Ctrl+Alt+T)
 2) Ввести следующие команды:
-   ###### sudo apt install git
    ###### cd ~/Документы
-   ###### git clone https://github.com/Vasilii-Korneev/AIS-LR1.git
-   ###### cd ~/Документы/AIS-LR1
-   ###### g++ -o ais-lr1 main.cpp
-   ###### ./ais-lr1
-4) Следовать указаниям в терминале
-5) Для повторного запуска программы введите:   
-   ###### ./ais-lr1
+   ###### git clone https://github.com/Vasilii-Korneev/AIS-LR2.git
+   ###### cd ~/Документы/AIS-LR2
+   ###### g++ -o server server.cpp  
+   ###### ./server
+3) Следовать указаниям в терминале
+4) При вводе пути конфигурационного файла использовать
+   ###### /home/wm/Документы/AIS-LR2/server.cfg
+5) Открыть новый терминал (Ctrl+Alt+T)
+6) Ввести следующие команды:
+   ###### cd ~/Документы/AIS-LR2
+   ###### g++ -o client client.cpp  
+   ###### ./client
+7) Следовать указаниям в терминале
+8) При вводе пути конфигурационного файла использовать
+   ###### /home/wm/Документы/AIS-LR2/client.cfg
 ## Instructions for running on Linux (Ubuntu):
    We are already working on it...
    
