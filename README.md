@@ -20,7 +20,7 @@
    The maximum number of streams, port, maximum file size, as well as the path for saving files are specified in the application startup arguments or configuration file.
 
 ## Требования к системе
- ### В операционной системе должны бытб установлены:
+ ### В операционной системе должны быть установлены:
    1) Распределённая система контроля версий GIT
 
       Для установки на Linux (на Debian/Ubuntu/Mint) откройте терминал и введите:
